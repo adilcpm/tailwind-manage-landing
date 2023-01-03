@@ -69,3 +69,19 @@ body {
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+section {
+    transition: transform 0.4s ease;
+}
+
+#features {
+    transform: translateX(-200%);
+}
+
+#testimonials {
+    transform: translateX(200%);
+}
+
+section.show {
+    transform: translateX(0) !important;
+}
